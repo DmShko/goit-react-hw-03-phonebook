@@ -12,7 +12,7 @@ export class App extends Component {
 
   /* life cycle methods*/
   componentDidUpdate(prevState) {
-
+    // add data, if state was changed
     if(prevState !== this.state) localStorage.setItem("phonebook", JSON.stringify(this.state));
     
   }
@@ -23,7 +23,7 @@ export class App extends Component {
 
   }
  /* life cycle methods*/
- 
+
   changeContacts = newstate => {
     if (
       this.state.contacts.find(
