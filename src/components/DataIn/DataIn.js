@@ -29,7 +29,7 @@ export class DataIn extends Component {
       evt.preventDefault();
     }
 
-    clearInputs();
+    this.clearInputs();
   };
 
   checkValid = data => {
